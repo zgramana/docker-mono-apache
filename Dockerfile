@@ -20,5 +20,7 @@ RUN apt-get update \
 ADD ./config/apache2-site.conf /etc/apache2/sites-available/default
 
 WORKDIR /var/www
+
 EXPOSE 80
+
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
