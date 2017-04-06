@@ -12,7 +12,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy main" | tee /e
   && echo "deb http://download.mono-project.com/repo/debian wheezy-apache24-compat main" | tee -a /etc/apt/sources.list.d/mono-xamarin.list \
   && echo "deb http://download.mono-project.com/repo/debian wheezy-libjpeg62-compat main" | tee -a /etc/apt/sources.list.d/mono-xamarin.list \
   && apt-get update \
-  && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl mono-devel apache2 libapache2-mod-mono mono-apache-server4 --no-install-recommends \
+  && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl mono-devel apache2 libapache2-mod-mono mono-apache-server4 mono-xsp4-base --no-install-recommends \
   && a2enmod mod_mono \
   && service apache2 stop \
   && apt-get autoremove -y \
