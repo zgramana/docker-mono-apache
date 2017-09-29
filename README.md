@@ -6,7 +6,7 @@ This repository contains Dockerfile for publishing Docker's automated build to t
 
 ### Base docker image
 
-    mono:4.8.0
+    debian:wheezy-slim
 
 ### Usage
 
